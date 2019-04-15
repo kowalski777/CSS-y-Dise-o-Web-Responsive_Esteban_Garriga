@@ -1,0 +1,225 @@
+body {
+	font-family:Dancing Script;
+	background-color: #02010a;
+	animation-name: movimiento-animacion;
+	animation-duration: 1s;
+}
+img{
+	box-shadow: 2px 2px  #02010a;
+}
+@keyframes movimiento-animacion {
+	0% {
+	
+	position: relative;
+	margin-top: 150%
+	}
+	60% {
+	position: relative;
+	margin-top: -5%;
+	}
+	100% {
+	position: relative;
+	margin-top: 0%;
+	}
+}
+
+header {
+	display: inline-flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 80px;
+	width: 80%;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+}
+header h1 {
+	width: 50%;
+	color:white;
+	text-shadow: 0.1em 0.1em 0.05em #02010a;
+	padding: 0 0 0 5%;
+}	
+#nav {
+	width: 30%;
+	color:white;
+	padding: 4% 0 0 15%;
+}
+#nav a{
+	margin-right: 7%;
+	background-color: #0000;
+	color:white;
+	font-size: 1.3em;
+	text-shadow: 0.1em 0.1em 0.05em #02010a;
+}
+#nosub{
+	text-decoration: none;
+}
+#nav a:hover{
+	transition-duration: 1s;
+	color:#1A8CF7;
+}
+#contenido{
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-flow: row wrap;
+	background:#d5c75f;
+}
+.foto{
+	box-sizing: border-box;
+	width: 31%;
+	margin: 10px;
+}
+
+#uno{
+-webkit-filter:blur(10px);
+filter:blur(10px);
+}
+
+#dos{
+-webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#tres{
+-webkit-filter:sepia(90%);
+filter:sepia(90%);
+}
+#cuatro{
+-webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+#cinco{
+
+}
+#seis{
+-webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+
+img{
+	width: 100%;
+}
+	
+footer {
+width: 80%;	
+margin-left: 10%; 
+background-color: #C6d5c5;
+border-radius: 0px 0px 10px 10px; 
+
+}
+.flex {
+width: 100%;
+margin-left: 1%;
+display: inline-flex;
+}
+.flex div {
+box-sizing: border-box;
+text-align: left;
+width: 25%;
+}
+
+div .head{
+width: 25%;
+padding-right: 10px;
+text-align:left;
+font-family: Lucida Calligraphy;
+font-size: 18px;
+
+
+}
+div #txt {
+width: 100%;
+text-align:left;
+font-family: MV Boli;
+color:black;
+}
+p{
+font-family: MV Boli;
+color:black;
+}
+
+@media all and (max-width: 900px) {
+body {
+animation-name: movimiento-animacion;
+animation-duration: 1s;
+}
+
+@keyframes movimiento-animacion {
+0% {
+position: relative;
+margin-top: 150%
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0%;
+	}
+}
+header {
+display: inline-table;
+height: 100px;
+width: 100%;
+margin-left: 0;
+background-color: #5b7989;
+border-radius: 10px 10px 0px 0px;
+}
+header h1 {
+width: 100%;
+display: table;
+padding:0;
+margin:0;
+text-align: center;
+}	
+#nav {
+padding:0;
+margin:5% 0 0 0;
+display: table;
+width: 100%;
+text-align: center;
+}
+
+#contenido {
+width: 100%;
+margin:0px;
+}
+.foto {
+width: 100%;
+margin-top: 5px;
+text-align: left;
+}
+#uno, #dos, #tres, #cuatro, #cinco, #seis{
+	width: 100%;
+}
+
+.flex {
+width: 100%;
+display: inline-block;
+}
+footer{
+	width: 100%;
+	margin-left: 0;
+}
+.flex div {
+width: 100%;
+height: auto;
+text-align: center;
+}
+
+div .head{
+margin-left: 5%;
+text-align: center;
+font-family: Lucida Calligraphy;
+font-size: 1em;
+}
+
+div #txt {
+text-align: justify;
+text-align: center;
+font-family: MV Boli;
+color:black;
+}
+}
+}

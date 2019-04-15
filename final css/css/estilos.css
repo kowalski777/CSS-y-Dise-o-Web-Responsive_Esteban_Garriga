@@ -1,0 +1,286 @@
+body {
+	font-family:Dancing Script;
+	background-color: #02010a;
+	animation-name: movimiento-animacion;
+	animation-duration: 1s;
+}
+img{
+	box-shadow: 2px 2px  #02010a;
+}
+
+@keyframes movimiento-animacion {
+	0% {
+	
+	position: relative;
+	margin-top: 150%
+	}
+	60% {
+	position: relative;
+	margin-top: -5%;
+	}
+	100% {
+	position: relative;
+	margin-top: 0%;
+	}
+}
+
+header {
+	display: inline-flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 80px;
+	width: 80%;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+}
+header h1 {
+	width: 50%;
+	color:white;
+	text-shadow: 0.1em 0.1em 0.05em #02010a;
+	padding: 0 0 0 5%;
+}	
+#nav {
+	width: 30%;
+	color:white;
+	padding: 4% 0 0 15%;
+}
+#nav a{
+	margin-right: 7%;
+	background-color: #0000;
+	color:white;
+	font-size: 1.3em;
+	text-shadow: 0.1em 0.1em 0.05em #02010a;
+}
+#nosub{
+	text-decoration: none;
+}
+#nav a:hover{
+	transition-duration: 1s;
+	color:#1A8CF7;
+}
+#contenido{
+	width: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#imagen_central {
+	text-align: center;
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    background:  #82c3a6;
+}
+#imagen_central img {
+	width: 70%;
+	box-shadow: 2px 2px;
+}
+#img_enlinea{
+width: 80%;
+display: -webkit-flex; /* Safari */
+-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+display: flex;
+flex-wrap: wrap;
+background: #d5c75f;
+}
+.capt{
+margin: 1%;
+width: 39%;
+display: inline-flex;
+margin-left: 5%;
+
+}
+#img1 , #img2{
+width: 100%;
+/* Firefox */
+-moz-transition: -moz-transform 0.3s ease;
+/* WebKit */
+-webkit-transition: -webkit-transform 0.3s ease;
+/* Opera */
+-o-transition: -o-transform 0.3s ease;
+/* Standard */
+transition: all 0.3s ease;
+
+
+} 
+#img1:hover{
+/* Firefox */
+-moz-transform: rotate(10deg);
+/* WebKit */
+-webkit-transform: rotate(10deg);
+/* Opera */
+-o-transform: rotate(10deg);
+/* Standard */
+transform: rotate(10deg);
+
+-webkit-box-shadow: 5px 5px #82c3a6;
+-moz-box-shadow: 5px 5px #82c3a6;
+box-shadow: 5px 5px #82c3a6;
+border:solid 2px;
+
+transition-duration: 2s;
+}
+#img2:hover{
+transform: translate(5px, -20px);
+border: solid 2px;
+-webkit-box-shadow: 5px 5px #82c3a6;
+-moz-box-shadow: 5px 5px #82c3a6;
+box-shadow: 5px 5px #82c3a6;
+transition-duration: 2s;
+}
+
+#p1 , #p2{
+text-align: center;	
+font-size: 150%;
+
+
+}
+	
+footer {
+width: 80%;	
+margin-left: 10%; 
+background-color: #C6d5c5;
+border-radius: 0px 0px 10px 10px; 
+
+}
+.flex {
+width: 100%;
+margin-left: 1%;
+display: inline-flex;
+}
+.flex div {
+box-sizing: border-box;
+text-align: left;
+width: 25%;
+}
+
+div .head{
+width: 25%;
+padding-right: 10px;
+text-align:left;
+font-size: 18px;
+
+
+}
+div #txt {
+width: 100%;
+text-align:left;
+font-family: MV Boli;
+color:black;
+
+}
+p{
+font-family: MV Boli;
+color:black;
+}
+
+@media all and (max-width: 900px) {
+
+body {
+animation-name: movimiento-animacion;
+animation-duration: 1s;
+}
+
+@keyframes movimiento-animacion {
+0% {
+position: relative;
+margin-top: 150%
+}
+60% {
+position: relative;
+margin-top: -5%;
+}
+100% {
+position: relative;
+margin-top: 0%;
+	}
+}
+header {
+display: inline-table;
+height: 100px;
+width: 100%;
+margin-left: 0;
+background-color: #5b7989;
+border-radius: 10px 10px 0px 0px;
+}
+header h1 {
+width: 100%;
+display: table;
+padding:0;
+margin:0;
+text-align: center;
+}	
+#nav {
+padding:0;
+margin:5% 0 0 2%;
+display: table;
+width: 100%;
+text-align: center;
+}
+#contenido{
+margin-left: 0%;
+}
+#img_enlinea{
+width: 100%;
+}
+#imagen_central {
+width: 100%;
+margin:0px;
+}
+#imagen_central img {
+width: 98%;
+margin-top: 5px;
+text-align: center;
+}
+#img1 {
+display: inline-block; 
+width: 99%;
+order: 1;
+}
+#img2 {
+display: inline-block; 
+width: 99%;
+order: 2;
+}
+#img1:hover{
+	width: 100%;
+}
+#img2:hover{
+	width: 100%;
+}
+.capt{
+width: 100%;
+display: inline-block;
+}
+
+#p1, #p2{
+width: 90%;
+}
+
+.flex {
+width: 100%;
+display: inline-block;
+}
+footer{
+	width: 100%;
+	margin-left: 0;
+}
+.flex div {
+width: 100%;
+height: auto;
+text-align: center;
+}
+
+div .head{
+margin-left: 5%;
+text-align: center;
+font-family: Lucida Calligraphy;
+font-size: 1em;
+}
+
+div #txt {
+text-align: justify;
+text-align: center;
+font-family: MV Boli;
+color:black;
+}
+}
